@@ -39,9 +39,14 @@
 
 body {
   font-family: "YourFamilyFont", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.row-smmry {
+#row-smmry {
   padding: 25px;
 }
 
@@ -128,34 +133,34 @@ body {
   width: fit-content;
 }
 
-.reaction {
+.Reaction {
   background-color: #FFF6F5;
 }
-.reaction .left-section p {
+.Reaction .left-section p {
   font-weight: 700;
   color: hsl(0, 100%, 67%);
 }
 
-.memory {
+.Memory {
   background-color: #FFFBF2;
 }
-.memory .left-section p {
+.Memory .left-section p {
   font-weight: 700;
   color: hsl(39, 100%, 56%);
 }
 
-.verbal {
+.Verbal {
   background-color: #F2FBFA;
 }
-.verbal .left-section p {
+.Verbal .left-section p {
   font-weight: 700;
   color: hsl(166, 100%, 37%);
 }
 
-.visual {
+.Visual {
   background-color: #F3F3FD;
 }
-.visual .left-section p {
+.Visual .left-section p {
   font-weight: 700;
   color: hsl(234, 85%, 45%);
 }
@@ -184,8 +189,13 @@ body {
   background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsl(241, 81%, 54%));
 }
 
-@media only screen and (max-width: 1040px) {
-  /* Adjust styles for screens with a maximum width of 600px (typical for mobile devices) */
+@media only screen and (max-width: 620px) {
+  body {
+    width: 100%;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
   .palingluar {
     flex-direction: column;
   }
