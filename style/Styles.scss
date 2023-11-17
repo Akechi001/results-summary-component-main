@@ -232,6 +232,11 @@ body{
     width: 100%;
   }
 
+  .container-kiri{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
   .left-section img,
   .right-section {
     width: 100%;
