@@ -28,13 +28,13 @@ $fontweight800: 800;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
 }
 
 .container-kanan{
   width: 50%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .container-kiri{
@@ -52,8 +52,8 @@ $fontweight800: 800;
 
 
 .circle{
-  width: 12vw;
-  height: 12vw; /* Ini membuat tinggi sama dengan lebar, sehingga membentuk lingkaran */
+  width: 200px;
+  height: 200px; /* Ini membuat tinggi sama dengan lebar, sehingga membentuk lingkaran */
   background: linear-gradient(to bottom, $Violet_blue, $Light_royal_blue  );
   border-radius: 50%;
   display: flex;
@@ -222,10 +222,18 @@ body{
   justify-content: center;
   padding: 15px;
   justify-items: center;
+  font-weight: $fontweight700;
+  font-size: 14px;
+  margin-bottom: 35px;
+
 }
 
 .button-cnt button:active{
   background: linear-gradient(to bottom, $Violet_blue, $Light_royal_blue);
+}
+
+.right-section img{
+
 }
 
 @media only screen and (max-width: 620px) {
@@ -250,7 +258,7 @@ body{
     border-top-right-radius: 0;
   }
 
-  .left-section img,
+
   .right-section {
     width: 100%;
     justify-content: flex-end;
@@ -266,7 +274,12 @@ body{
   }
 
   .button-cnt button {
-    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 900px){
+  .circle{
+
   }
 }
   
