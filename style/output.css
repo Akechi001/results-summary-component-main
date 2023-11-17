@@ -184,4 +184,30 @@ body {
   background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsl(241, 81%, 54%));
 }
 
+@media only screen and (max-width: 1040px) {
+  /* Adjust styles for screens with a maximum width of 600px (typical for mobile devices) */
+  .palingluar {
+    flex-direction: column;
+  }
+  .container-kanan,
+  .container-kiri {
+    width: 100%;
+  }
+  .left-section img,
+  .right-section {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .description {
+    padding: 25px;
+  }
+  .circle {
+    width: 30vmin;
+    height: 30vmin;
+  }
+  .button-cnt button {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */
